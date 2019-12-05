@@ -1,2 +1,2 @@
 ## White Board
-![whiteboard](./assets/array-reverse.jpg)
+![whiteboard](../../assets/array-reverse.jpg)

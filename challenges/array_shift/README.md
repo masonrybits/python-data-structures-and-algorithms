@@ -8,4 +8,4 @@ Write a function called insertShiftArray which takes in an array and the value t
 Taking the insert approach.
 
 ## Solution
-![whiteboard](./assets/array-shift.jpg)
+![whiteboard](../../assets/array-shift.jpg)
