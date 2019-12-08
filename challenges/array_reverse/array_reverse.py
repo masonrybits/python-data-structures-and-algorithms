@@ -1,5 +1,4 @@
-def reverseArray(input): 
-    new_list = input[::-1] 
+def reverseArray(array): 
+    new_list = array[::-1] 
     print(new_list)
       
-reverseArray(input())
