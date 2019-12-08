@@ -6,6 +6,8 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 ## Approach & Efficiency
 Taking the insert approach.
+O(n) for big O time complexity
+O(n) for big O space complexity
 
 ## Solution
 ![whiteboard](../../assets/array-shift.jpg)
