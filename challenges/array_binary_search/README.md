@@ -10,4 +10,4 @@ O(log(n)) for big O time complexity
 O(n) for big O space complexity
 
 ## Solution
-![whiteboard](../../assets/array-shift.jpg)
+![whiteboard](../../assets/binary_search.jpg)
