@@ -96,6 +96,26 @@ class LinkedList:
         else:
             return 'No such as value in the list.'
 
+    def kth_from_end(self, k):
+        main_ptr = self.head
+        ref_ptr = self.head
+
+        count = 0
+        if(self.head is not None):
+            while(count < k ):
+                if(ref_ptr is None):
+                    print ('not enough nodes in the list to go back kth term')
+                    return
+
+                ref_ptr = ref_ptr.next
+                count += 1
+
+        while(ref_ptr is not None):
+            main_ptr = main_ptr.next
+            ref_ptr = ref_ptr.next
+
+        return main_ptr.value
+
 
 if __name__ == "__main__":
     ll = LinkedList()

@@ -83,3 +83,23 @@ def test_insert_after():
     expected = '1 2 3'
     actual = ll.to_string()
     assert actual == expected
+
+def kth_from_end():
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(2)
+    ll.append(3)
+    ll.kth_from_end(1)
+    expected = '2'
+    actual = ll.to_string()
+    assert actual == expected
+
+def kth_from_end_fail():
+    ll = LinkedList()
+    ll.append(1)
+    ll.append(2)
+    ll.append(3)
+    ll.kth_from_end(4)
+    expected = 'not enough nodes in the list to go back kth term'
+    actual = ll.to_string()
+    assert actual == expected

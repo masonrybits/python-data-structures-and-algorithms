@@ -36,9 +36,15 @@ Taking the insert_after method.
 O(n) for big O time complexity.
 O(n) for big O space complexity.
 
+Taking the kth_from_end method.
+O(n) for big O time complexity.
+O(n) for big O space complexity.
+
 
 ## API
 The LinkedList class has an attribute head. An insert method that adds a node to the beginning of the linked list. An includes method that looks for a node in the linked list. And a to_string method that returns a string representing all the values in the linked list. An append method that adds a node to the end of the linked list. An insert_before method that adds a new node before a given node. And an insert_after method that adds a new node after a given node
 
 ## Solution
-![whiteboard](../../assets/linked_list.jpg) (../../assets/linked_list_1.jpg)
+![whiteboard](../../assets/linked_list.jpg)
+![whiteboard](../../assets/linked_list_1.jpg)
+![whiteboard](../../assets/kth_from_end.jpg)
