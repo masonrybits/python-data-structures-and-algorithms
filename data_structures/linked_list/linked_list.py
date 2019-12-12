@@ -116,6 +116,26 @@ class LinkedList:
 
         return main_ptr.value
 
+    @staticmethod
+    def merge_lists(ll1, ll2):
+        ll1_current = ll1.head
+        ll2_current = ll2.head
+
+        while ll1_current and ll2_current:
+
+            ll1_next = ll1_current.next
+            ll2_next = ll2_current.next
+
+            ll2_current.next = ll1_next
+            ll1_current.next = ll2_current
+
+            ll1_current = ll1_next
+            ll2_current = ll2_next
+
+        ll2_current = ll2.head
+
+        return ll1.head
+
 
 if __name__ == "__main__":
     ll = LinkedList()

@@ -84,7 +84,7 @@ def test_insert_after():
     actual = ll.to_string()
     assert actual == expected
 
-def kth_from_end():
+def test_kth_from_end():
     ll = LinkedList()
     ll.append(1)
     ll.append(2)
@@ -94,7 +94,7 @@ def kth_from_end():
     actual = ll.to_string()
     assert actual == expected
 
-def kth_from_end_fail():
+def test_kth_from_end_fail():
     ll = LinkedList()
     ll.append(1)
     ll.append(2)
@@ -102,4 +102,34 @@ def kth_from_end_fail():
     ll.kth_from_end(4)
     expected = 'not enough nodes in the list to go back kth term'
     actual = ll.to_string()
+    assert actual == expected
+
+def test_merge_lists_longer_ll2():
+    ll1 = LinkedList()
+    ll1.append(1)
+    ll1.append(2)
+    ll1.append(3)
+    ll2 = LinkedList()
+    ll2.append('a')
+    ll2.append('b')
+    ll2.append('c')
+    ll2.append('d')
+    LinkedList.merge_lists(ll1,ll2)
+    expected = '1 a 2 b 3 c d'
+    actual = ll1.to_string()
+    assert actual == expected
+
+def test_merge_lists_longer_ll1():
+    ll1 = LinkedList()
+    ll1.append(1)
+    ll1.append(2)
+    ll1.append(3)
+    ll1.append(4)
+    ll2 = LinkedList()
+    ll2.append('a')
+    ll2.append('b')
+    ll2.append('c')
+    LinkedList.merge_lists(ll1,ll2)
+    expected = '1 a 2 b 3 c 4'
+    actual = ll1.to_string()
     assert actual == expected
