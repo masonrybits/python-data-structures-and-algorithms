@@ -20,16 +20,16 @@ Define a method called isEmpty that does not take an argument, and returns a boo
 For each of the method, only one node is added/removed from the beginning of the stack or beginning/end of the queue. Hence only O(1).
 
 Big O for Stack methods:
-⋅⋅* push: O(1)
-⋅⋅* pop: O(1)
-⋅⋅* peek: O(1)
-⋅⋅* is_empty: O(1)
+* push: O(1)
+* pop: O(1)
+* peek: O(1)
+* is_empty: O(1)
 
 Big O for Queue methods:
-⋅⋅* enque: O(1)
-⋅⋅* deque: O(1)
-⋅⋅* peek: O(1)
-⋅⋅* is_empty: O(1)
+* enque: O(1)
+* deque: O(1)
+* peek: O(1)
+* is_empty: O(1)
 
 
 ## API
