@@ -14,7 +14,7 @@ class Stack:
 
     def pop(self):
         if not isinstance(self.top, Node):
-            return 'Error'
+            raise EmptyStackException()
         removed = self.top
         self.top = self.top.next
         return removed
@@ -22,7 +22,7 @@ class Stack:
     def peek(self):
         if isinstance(self.top, Node):
             return self.top.value
-        return 'Error'
+        raise EmptyStackException()
 
     def is_empty(self):
         if self.top:
@@ -39,16 +39,16 @@ class Queue:
                 self.end = end_next
                 end_next = end_next.next
 
-    def enque(self, value):
+    def enqueue(self, value):
         new_node = Node(value)
         if self.is_empty():
             self.front = self.end = new_node
         else:
             self.end.next = self.end = new_node
 
-    def deque(self):
+    def dequeue(self):
         if self.is_empty():
-            return 'Error'
+            raise EmptyQueueException()
         removed = self.front
         self.front = self.front.next
         return removed
@@ -56,9 +56,17 @@ class Queue:
     def peek(self):
         if not self.is_empty():
             return self.front.value
-        return 'Error'
+        raise EmptyQueueException()
 
     def is_empty(self):
         if self.front:
             return False
         return True
+
+
+class EmptyStackException(AttributeError):
+    pass
+
+
+class EmptyQueueException(AttributeError):
+    pass
