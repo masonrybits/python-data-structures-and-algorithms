@@ -17,3 +17,6 @@ Big O for PseudoQueue methods:
 ## API
 
 The PseudoQueue class has attributes stack1 and stack2. A enqueue method that adds a node to the end of the queues. A dequeue method that removes a node from the beginning of the queues.
+
+## Solution
+![whiteboard](../../assets/queue_with_stacks.jpg)
