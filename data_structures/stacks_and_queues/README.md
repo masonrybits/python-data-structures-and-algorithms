@@ -1,4 +1,4 @@
-# Singly Linked List
+# Stacks and Queues
 Challenges that utlize stacks and queues.
 
 ## Challenge Description
