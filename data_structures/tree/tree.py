@@ -82,3 +82,4 @@ class BinarySearchTree(BinaryTree):
                 return self.contains(value, node.right)
             else:
                 return False
+
