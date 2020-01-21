@@ -12,6 +12,7 @@
 * [merge-sort](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/challenges/merge_sort)
 * [quick-sort](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/challenges/quick_sort)
 * [repeated-word](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/challenges/repreated_word)
+* [tree-intersection](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/challenges/tree_intersection)
 
 #### [Data Structures](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/data_structures)
 * [breadth-first](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/data_structures/breadth-first)
