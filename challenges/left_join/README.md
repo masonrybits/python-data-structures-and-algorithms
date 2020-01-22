@@ -11,4 +11,4 @@ Combine the key and corresponding values of the 2 hashmaps (if they exist) into 
     * Big O time O(n)
 
 ## Solution
-![whiteboard](../../assets/left_join.jpg)
+![whiteboard](../../assets/left-join.jpg)
