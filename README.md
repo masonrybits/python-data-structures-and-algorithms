@@ -13,6 +13,7 @@
 * [quick-sort](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/challenges/quick_sort)
 * [repeated-word](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/challenges/repreated_word)
 * [tree-intersection](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/challenges/tree_intersection)
+* [left-join](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/challenges/left_join)
 
 #### [Data Structures](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/data_structures)
 * [breadth-first](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/data_structures/breadth-first)
@@ -24,4 +25,6 @@
 * [queue-with-stacks](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/data_structures/queue_with_stacks)
 * [stacks-and-queues](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/data_structures/stacks_and_queues)
 * [tree](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/data_structures/tree)
+* [graph](https://github.com/masonrybits/python-data-structures-and-algorithms/tree/master/data_structures/graph)
+
 
