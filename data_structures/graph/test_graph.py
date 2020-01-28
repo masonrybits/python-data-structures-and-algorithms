@@ -3,7 +3,7 @@ import pytest
 from graph import Graph, Vertex
 
 def test_add_node():
-    
+
     graph = Graph()
 
     expected = 'spam' # a vertex's value that comes back
@@ -37,7 +37,7 @@ def test_size():
 
 
 def test_add_edge_interloper_start():
-    
+
     graph = Graph()
 
     start = Vertex('start')
@@ -51,7 +51,7 @@ def test_add_edge_interloper_start():
 
 
 def test_add_edge_interloper_end():
-    
+
     graph = Graph()
 
     end = Vertex('end')
@@ -63,7 +63,7 @@ def test_add_edge_interloper_end():
 
 
 def test_add_edge_groovy():
-    
+
     graph = Graph()
 
     end = graph.add_node('end')
@@ -120,7 +120,7 @@ def test_get_nodes():
     expected = 2
 
     actual = len(graph.get_nodes())
-    
+
     assert actual == expected
 
 
@@ -149,12 +149,36 @@ def test_get_neighbors():
 
     assert neighbors[0][1] == 44
 
+def test_breadth_first():
+
+    graph = Graph()
+
+    banana = graph.add_node('banana')
+
+    apple = graph.add_node('apple')
+
+    sun = graph.add_node('sun')
+
+    graph.add_edge(apple, banana,)
+
+    graph.add_edge(banana, apple,)
+
+    graph.add_edge(sun, banana,)
+
+    graph.add_edge(banana, sun,)
+
+    actual = graph.breadth_first(apple)
+
+    expected = [apple,banana,sun]
+
+    assert actual == expected
 
 
 
 
 
-    
+
+
 
 
 
