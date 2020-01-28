@@ -1,3 +1,6 @@
+from queue import Queue
+
+
 class Graph:
 
     def __init__(self):
@@ -36,6 +39,25 @@ class Graph:
     def get_neighbors(self, vertex):
         '''return the neighbors of a given node'''
         return self._adjacency_list[vertex]
+
+    def breadth_first(self, vertex):
+        vertices_list = []
+        visited_vertices = set([vertex])
+        traversal_queue = Queue()
+
+        traversal_queue.enqueue(vertex)
+
+        while not traversal_queue.is_empty():
+            current = traversal_queue.dequeue()
+            vertices_list.append(current)
+
+            for vertex in self.get_neighbors(current):
+                vertex = vertices_list[0]
+                if vertex not in visited_vertices:
+                    visited_vertices.add(vertex)
+                    traversal_queue.enqueue(vertex)
+
+        return vertices_list
 
 
 class Vertex:
