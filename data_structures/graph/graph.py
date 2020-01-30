@@ -88,7 +88,14 @@ class Graph:
             if not is_neighbor:
                 return f'{is_neighbor} : $0'
 
+    def depth_first(self, vertex):
+        vertices_list = []
 
+        if vertex not in vertices_list:
+            vertices_list.append(vertex)
+
+        return vertices_list
+        
 class Vertex:
     def __init__(self, value):
         self.value = value
